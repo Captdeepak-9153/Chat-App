@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
@@ -13,7 +12,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
+
 
 .screen.join-screen.active {
     background-image: url("https://images.unsplash.com/photo-1531315630201-bb15abeb1653?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -22,6 +23,7 @@ body {
     background-position: center;
     background-color: rgba(255, 255, 255, 0.5); /* Background color with reduced opacity */
 }
+
 
 .app {
     position: fixed;
@@ -89,11 +91,8 @@ body {
 }
 
 .chat-screen .header {
-    background-image: url("https://images.unsplash.com/photo-1531315630201-bb15abeb1653?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100px;
+    background: #111;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,17 +103,7 @@ body {
     font-size: 18px;
     color: #eee;
     font-weight: 600;
-    position: absolute;
-    top: 10px; /* Adjust top position as needed */
-    left: 10px; /* Adjust left position as needed */
 }
-
-
-.chat-screen .header .logo img {
-    width: 80px; /* Adjust width as needed */
-    height: auto;
-}
-
 
 .chat-screen .header button {
     padding: 5px 10px;
