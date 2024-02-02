@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Chat App</title>
 </head>
-<body>
-   <div class="app">
-    <div class="screen join-screen active">
-        <div class="form">
-            <h2>Join ChatRoom</h2>
-            <div class="form-input">
-                <label>Username</label>
-                <input type="text" id="username">
-            </div>
-            <div class="form-input">
-                <button id="join-user">Join</button>
-            </div>
-        </div>
-    </div>
-    <div class="screen chat-screen ">
-        <div class="header">
-            <div class="logo"><img src="./34630532_8150750.svg" alt=""></div>
-            <button id="exit-chat">Exit</button>
-        </div>
-        <!-- Message container added here -->
-        <div class="messages-container">
-            <div class="messages">
-            </div>
-        </div>
-        <div class="typebox">
-           <input type="text" id="message-input" placeholder="Type your message..."> 
-           <button id="send-messages">Send</button>
-        </div>
-    </div>
 
-   </div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Join ChatRoom</h2>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen active">
+            <div class="header">
+                <div class="logo"><img src="./34630532_8150750.svg" alt=""></div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <!-- Message container added here -->
+            <div class="messages-container">
+                <div class="messages">
+                </div>
+                <div class="typebox active">
+                    <input type="text"  id="message-input" placeholder="Type your message...">
+                    <button  id="send-messages">Send</button>
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
-</html>
 
+</html>

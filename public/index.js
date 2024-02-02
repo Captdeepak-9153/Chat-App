@@ -14,6 +14,7 @@
         uname = username;
         app.querySelector(".join-screen").classList.remove("active");
         app.querySelector(".chat-screen").classList.add("active");
+        app.querySelector(".typebox").classList.remove("active");
     });
 // for sending messages
     app.querySelector(".chat-screen #send-messages").addEventListener("click",function(){
@@ -79,6 +80,7 @@
         }
         // Scroll to the bottom after appending new message
          messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight;
+         console.log( messageContainer.scrollTop);
 
     }
 })
